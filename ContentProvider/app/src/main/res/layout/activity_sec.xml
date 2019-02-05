@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/editTextNewToDoString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="DOTO"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Place"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonAddToDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Add" />
+
+    <TextView
+        android:id="@+id/textViewToDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="10"
+        android:maxLines="10"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextToDoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/buttonRemoveToDo"
+            android:gravity="center"
+            android:hint="TODO Id"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonRemoveToDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="Remove" />
+
+
+        <Button
+            android:id="@+id/buttonModifyToDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonRemoveToDo"
+            android:layout_alignParentRight="true"
+            android:text="Modify" />
+
+        <EditText
+            android:id="@+id/editTextNewToDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextToDoId"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/buttonModifyToDo"
+            android:gravity="center"
+            android:hint="Modify ToDo"
+            android:inputType="text" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
